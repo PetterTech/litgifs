@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>GIF-veggen</title>
+  <style>
+    body { margin: 0; padding: 2rem 1rem; background: #fff; color: #111; text-align: center;
+           font-family: "Segoe UI", Tahoma, Arial, Helvetica, sans-serif; }
+    #gifs { display: flex; flex-direction: column; align-items: center; gap: 3rem; }
+    figure { margin: 0; }
+    h1 { font-size: 25px; margin: 0 0 .5rem; }
+    h1::first-letter { text-transform: uppercase; }
+    img { max-width: 90vw; max-height: 40vh; }
+    #joke, #countdown { font-size: 25px; font-weight: bold; margin-top: 3rem; }
+    #joke:empty, #countdown:empty { display: none; }
+    .broken { color: #888; font-style: italic; }
+  </style>
+</head>
+<body>
+  <main id="gifs"><p class="broken">Laster GIF-er …</p></main>
+  <p id="joke"></p>
+  <p id="countdown"></p>
+  <script src="app.js"></script>
+</body>
+</html>
